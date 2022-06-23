@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 *::-webkit-scrollbar {
     display: none;
@@ -20,6 +21,7 @@ body {
     height: 100vh;
     margin: 0;
     font-family: 'EB Garamond', serif;
+    background: #f4fffd;
 }
 
 ul {
@@ -42,10 +44,13 @@ a {
 }
 
 .nav-container{
-    background: #f4f9fc;
+    background: #f4fffd;
+    position: sticky;
+    top: 0;
 
     a {
-        color: #0f1b61;
+        color: #3F4045;
+        background: #f4fffd;
     }
 }
 
@@ -55,7 +60,8 @@ header {
     padding: 5em 8em 0em 8em;
 
     .logo {
-        color: #0f1b61;
+        color: #3F4045;
+        background: #f4fffd;
         font-weight: bold;
         font-size: 28px;
     }
@@ -83,30 +89,52 @@ header {
     section {
         height: 100vh;
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        flex-basis: 100%;
         scroll-snap-align: start;
 
         &:nth-of-type(1) {
-            background: #f4f9fc;
-            color: #0f1b61;
+            font-family: 'Roboto', sans-serif;
+            color: #3F4045;
+            background: #f4fffd;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: left;
+            align-items: left;
+            height: 100vh;
+            padding: 5em 0em 0em 15em;
         }
 
         &:nth-of-type(2) {
-            background: #f4f9fc;
-            color: #0f1b61;
+            font-family: 'Roboto', sans-serif;
+            color: #3F4045;
+            background: #f4fffd;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: left;
+            align-items: left;
+            padding: 5em 0em 0em 15em;
         }
 
         &:nth-of-type(3) {
-            background: #f4f9fc;
-            color: #0f1b61;
+            font-family: 'Roboto', sans-serif;
+            color: #3F4045;
+            background: #f4fffd;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: left;
+            align-items: left;
+            padding: 5em 0em 0em 15em;
         }
 
         &:nth-of-type(4) {
-            background: #f4f9fc;
-            color: #0f1b61;
+            font-family: 'Roboto', sans-serif;
+            color: #3F4045;
+            background: #f4fffd;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: left;
+            align-items: left;
+            padding: 5em 0em 0em 15em;
         }
     }
 
@@ -114,18 +142,41 @@ header {
 
 h1 {
     font-size: 80px;
-    font-family: 'EB Garamond', serif;
+    font-family: 'Roboto', sans-serif;
     padding: 0 0 0 0;
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 24px;
     font-family: 'EB Garamond', serif;
-    padding: 0 0 250px 0;
+    padding: 0 0 0 0;
+}
+
+h3 {
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 0 0 300px;
+    transform: rotate(-90deg);
+}
+
+h4 {
+    font-size: 38px;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 0 0 0;
 }
 
 stripes {
-    background-image: linear-gradient(45deg, #f4f9fc 36.36%, #aadcec 36.36%, #aadcec 50%, #f4f9fc 50%, #f4f9fc 86.36%, #aadcec 86.36%, #aadcec 100%);
+    background-image: linear-gradient(45deg, #f4fffd 36.36%, #aadcec 36.36%, #aadcec 50%, #f4fffd 50%, #f4fffd 86.36%, #aadcec 86.36%, #aadcec 100%);
     background-size: 15.56px 15.56px;
-    padding: 20px 200px 80px 200px ;
+    padding: 50px 600px 50px 0px ;
+    font-size: 80px;
+    font-family: 'Roboto', sans-serif;
+}
+
+stripes2 {
+    background-image: linear-gradient(45deg, #f4fffd 36.36%, #aadcec 36.36%, #aadcec 50%, #f4fffd 50%, #f4fffd 86.36%, #aadcec 86.36%, #aadcec 100%);
+    background-size: 15.56px 15.56px;
+    padding: 30px 150px 30px 30px ;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
 }
