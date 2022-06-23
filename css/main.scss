@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap');
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'EB Garamond', serif;
+}
+
+.body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: 'EB Garamond', serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+i {
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    padding: 0;
+}
+
+.nav-container::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-container{
+    background: #f4f9fc;
+
+    a {
+        color: #0f1b61;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5em 8em 0em 8em;
+
+    .logo {
+        color: #0f1b61;
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+
+    ul {
+        display: flex;
+
+        a {
+            display: block;
+            padding: 0 1em;
+        }
+    }
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+
+    section {
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        scroll-snap-align: start;
+
+        &:nth-of-type(1) {
+            background: #f4f9fc;
+            color: #0f1b61;
+        }
+
+        &:nth-of-type(2) {
+            background: #f4f9fc;
+            color: #0f1b61;
+        }
+
+        &:nth-of-type(3) {
+            background: #f4f9fc;
+            color: #0f1b61;
+        }
+
+        &:nth-of-type(4) {
+            background: #f4f9fc;
+            color: #0f1b61;
+        }
+    }
+
+}
+
+h1 {
+    font-size: 80px;
+    font-family: 'EB Garamond', serif;
+    padding: 0 0 0 0;
+}
+
+h2 {
+    font-size: 32px;
+    font-family: 'EB Garamond', serif;
+    padding: 0 0 250px 0;
+}
+
+stripes {
+    background-image: linear-gradient(45deg, #f4f9fc 36.36%, #aadcec 36.36%, #aadcec 50%, #f4f9fc 50%, #f4f9fc 86.36%, #aadcec 86.36%, #aadcec 100%);
+    background-size: 15.56px 15.56px;
+    padding: 20px 200px 80px 200px ;
+}
