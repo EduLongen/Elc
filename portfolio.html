@@ -15,13 +15,13 @@
 		<a  href="https://icons8.com/icon/10246/html">
 		<a  href="https://icons8.com/icon/10236/css">
 
-	<script src="/assets/js/script.js"></script>
+	<script src="/script.js"></script>
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" href="/assets/css/style.css">
+	<link rel="stylesheet" href="/style.css">
     
     <title>ELC blog</title>
 </head>
@@ -39,10 +39,10 @@
                 
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   	<li class="nav-item active">
-                    	<a class="nav-link" href="/views/portfolio/portfolio.html">Portfolio</a>
+                    	<a class="nav-link" href="portfolio.html">Portfolio</a>
                   	</li>
                   	<li class="nav-item active">
-                    	<a class="nav-link" href="/views/blog/blog.html">Blog</a>
+                    	<a class="nav-link" href="/blog.html">Blog</a>
                   	</li>
                   	<li class="nav-item active">
                     	<a class="nav-link" href="https://github.com/EduLongen">Github</a>
@@ -76,7 +76,7 @@
 		<div class="parent">
 			<div class="div1"> 
 				<div class="card" style="width: fit-content;">
-					<img src="/assets/img/odinbook.png" class="card-img-top" alt="...">
+					<img src="odinbook.png" class="card-img-top" alt="...">
 					<div class="card-body">
 						<p class="card-text">A social media website, Odinbook, focusing on core user functionality. The project involved building features such as user authentication, follow requests, post creation, liking posts, commenting on posts, and user profiles.</p>
 						<div class="language-symbol">
@@ -92,7 +92,7 @@
 			</div>
 			<div class="div2"> 
 				<div class="card" style="width: fit-content;">
-					<img src="/assets/img/odinbook.png" class="card-img-top" alt="...">
+					<img src="odinbook.png" class="card-img-top" alt="...">
 					<div class="card-body">
 						<p class="card-text">A social media website, Odinbook, focusing on core user functionality. The project involved building features such as user authentication, follow requests, post creation, liking posts, commenting on posts, and user profiles.</p>
 						<div class="language-symbol">
@@ -105,7 +105,7 @@
 			</div>
 			<div class="div3"> 
 				<div class="card" style="width: fit-content;">
-					<img src="/assets/img/odinbook.png" class="card-img-top" alt="...">
+					<img src="odinbook.png" class="card-img-top" alt="...">
 					<div class="card-body">
 						<p class="card-text">A social media website, Odinbook, focusing on core user functionality. The project involved building features such as user authentication, follow requests, post creation, liking posts, commenting on posts, and user profiles.</p>
 						<div class="language-symbol">
@@ -122,29 +122,6 @@
 		</div>
 
 	</main>
-
-	<!-- Scripts -->
-
-	<script>
-		$(document).ready(function(){
-			$('[data-bs-toggle="popover"]').popover({
-				placement: 'bottom',
-				trigger: 'click focus', // Add 'focus' trigger
-				html: true,
-				content: '<div class="media"><img src="assets/img/ahahah.gif"></div>'
-			});
-			
-			// Close popover when clicking outside of the popover or button
-			$('body').on('click', function (e) {
-				$('[data-bs-toggle="popover"]').each(function () {
-					if (!$(this).is(e.target) && $(this).has(e.target).length === 0 && $('.popover').has(e.target).length === 0) {
-						$(this).popover('hide');
-					}
-				});
-			});
-		});
-	</script>
-	
 
 </body>
 </html>
