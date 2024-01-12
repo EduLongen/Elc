@@ -1,0 +1,319 @@
+:root {
+    --main-background-color: #fbfbfb;
+    --main-text-color: #121619;
+    --main-text-color-2: #2e2e2e;
+    --blue-color: #1b8af7;
+    --white-color: #fafbfc;
+}
+
+* {
+
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    background: var(--main-background-color);
+    background-color: var(--main-background-color);
+}
+
+header {
+    background-color: transparent;
+    padding-top: 1.3rem;
+    padding-left: 11rem;
+    padding-right: 11rem;
+    top: 0; /* Add this line to stick the header to the top */
+    z-index: 100; /* Add this line to make sure the header is above all other elements */
+}
+
+header.scrolled {
+    background-color: var(--white-color); /* Replace #yourColor with the color you want when scrolled */
+    transition: background-color 1000ms ease-in-out;
+    box-shadow: 0 1px 3px 0 var(--main-text-color); /* Add a box shadow */
+    padding-top: 0.2rem; /* Reduce the padding */
+    transition: padding-top 500ms linear; /* Add a transition to make it smooth */
+    color: var(--main-text-color); /* Change the text color */
+}
+
+header .navbar {
+    font-family: 'Manrope', sans-serif;
+    background-color: transparent;
+    font-weight: bold;
+    color: var(--main-text-color);
+}
+
+header .navbar-brand {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: var(--main-text-color);
+    background-color: transparent;
+    margin-left: 0rem;
+    margin-right: 1rem;
+}
+
+header .navbar-brand-2 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: var(--main-text-color);
+    background-color: transparent;
+    margin-left: 2rem;
+    margin-right: 0rem;
+    text-decoration: none;
+}
+
+header .navbar-nav .nav-item.active .nav-link {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--main-text-color);
+    background-color: transparent;
+    margin-left: 2rem;
+}
+
+header .nav-login {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fbfbfb;
+    background-color: #373838;
+    padding: 0.7rem;
+}
+
+header .navbar-nav .nav-item .nav-link:hover {
+    color: #2e2e2e;
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.nav-item-1 {
+    font-size: 1.6rem;
+}
+
+.btn-secondary, .btn-secondary:hover, .btn-secondary:active, .btn-secondary:visited {
+    background-color: #505050 !important;
+    border-color: #505050 !important;
+    color: var(--white-color) !important;
+    font-family: 'Manrope', sans-serif !important;
+    font-size: 1rem !important;
+    border-radius: 100px !important;
+}
+
+.popover {
+    border-color: #fafafafa !important;
+}
+.popover .popover-arrow::before, .popover .popover-arrow::after {
+    border-color: #fafafafa !important; 
+}
+
+main {
+    margin-top: 6rem;
+    margin-left: 11rem;
+    margin-right: 11rem;
+}
+
+.about {
+    margin-bottom: 3rem;
+    animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.welcome-tittle {
+    font-family: 'Manrope', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--main-text-color);
+    margin-bottom: 2rem;
+    animation: text-shadow-drop-bl 0.6s both;
+}
+
+@keyframes text-focus-in {
+    0% {
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+.welcome {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--main-text-color);
+    margin-bottom: .3rem;
+}
+
+.space-line {
+    width: 100%;
+    height: 5rem;
+    background-color: var(--main-background-color);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card {
+    margin-top: 1rem !important;
+    margin-bottom: 1rem !important;
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+    background-color: #fbfbfb;
+    border: none;
+    border-radius: 0rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.card-text {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--main-text-color);
+    text-align: justify;
+}
+
+.language-symbol {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.symbol {
+    margin-right: 1rem;
+}
+
+.col-md-6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 4rem;
+}
+
+.blog-row {
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+}
+
+.blog-card-title {
+    font-family: 'Manrope', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--main-text-color);
+    margin-bottom: 1.5rem;
+    text-decoration: none;
+    line-height: 1.2;
+}
+
+.blog-card-text {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--main-text-color);
+    text-align: justify;
+}
+
+.blog-card-date {
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #3d3d3d;
+    text-align: justify;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+}
+
+.post-title {
+    font-family: 'Manrope', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--main-text-color);
+    margin-bottom: 2rem;
+    text-decoration: none;
+    line-height: 1.2;
+}
+
+.post-image {
+    width: 100%; /* This will make the image take the full width of its container */
+    height: auto; /* This will maintain the aspect ratio of the image */
+    object-fit: cover; /* This will make sure the image covers the entire area of its container */
+}
+
+.post-content {
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+    text-align: justify;
+}
+
+.post-subtitle {
+    font-family: 'Manrope', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--main-text-color-2);
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.post-text {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--main-text-color-2);
+    text-decoration: none;
+    line-height: 1.6;
+    display: inline-block;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column; /* This will arrange the items in a column */
+    align-items: start; /* This will align the items to the start of the container */
+}
+
+.text-pair {
+    display: flex;
+    flex-direction: row; /* This will arrange the items in a row */
+    align-items: start; /* This will align the items to the start of the container */
+
+}
+
+.post-text-2 {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 200;
+    color: var(--main-text-color-2);
+    text-decoration: none;
+    line-height: 1.5;
+    background-color: #ededed;
+    padding: .5rem;
+    border-radius: 0.3rem;
+    margin-right: 1rem;
+    display: inline-block; /* This will make the element only as wide as the text it contains */
+}
+
+.link-courses {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--blue-color);
+    text-decoration: none;
+    text-decoration: underline;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 3; }
+.div3 { grid-area: 2 / 1 / 3 / 2; }
+.div4 { grid-area: 2 / 2 / 3 / 3; }
+.div5 { grid-area: 3 / 1 / 4 / 2; }
+.div6 { grid-area: 3 / 2 / 4 / 3; }
