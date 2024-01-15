@@ -3,7 +3,7 @@ $(document).ready(function(){
         placement: 'bottom',
         trigger: 'click focus', // Add 'focus' trigger
         html: true,
-        content: '<div class="media"><img src="/assets/img/ahahah.gif"></div>'
+        content: '<div class="media"><img src="ahahah.gif"></div>'
     });
     
     // Close popover when clicking outside of the popover or button
@@ -24,3 +24,21 @@ window.onscroll = function() {
         header.classList.remove('scrolled');
     }
 };
+
+window.onload = function() {
+    var footerContainer = document.querySelector('.footer-container');
+    footerContainer.style.backgroundColor = 'var(--main-text-color)'; // Set the background color of the container to black
+    for (var i = 1; i <= 25; i++) {
+        var div = document.createElement('div');
+        div.style.height = (25 - i) + 'px'; // Adjust the height here
+        div.style.backgroundColor = 'var(--main-background-color)';
+        div.style.marginTop = i + 'px';
+        div.style.position = 'relative';
+        div.style.boxSizing = 'border-box';
+        div.style.borderTop = '1px solid var(--main-text-color)'; // Set the top border
+        div.style.borderBottom = '1px solid var(--main-text-color)'; // Set the bottom border
+        div.style.zIndex = '1';
+        div.className = 'div' + i;
+        footerContainer.appendChild(div);
+    }
+}

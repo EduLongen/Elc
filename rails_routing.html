@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+	<script src="script.js"></script>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="style.css">
+    
+    <title>ELC blog</title>
+</head>
+<body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg">
+
+			<a class="navbar-brand" href="index.html">Eduardo Longen Corrêa</a>
+
+  			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  			  <span class="navbar-toggler-icon"></span>
+  			</button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  	<li class="nav-item active">
+                    	<a class="nav-link" href="portfolio.html">Portfolio</a>
+                  	</li>
+                  	<li class="nav-item active">
+                    	<a class="nav-link" href="blog.html">Blog</a>
+                  	</li>
+                  	<li class="nav-item active">
+                    	<a class="nav-link" href="https://github.com/EduLongen">Github</a>
+                  	</li>
+                  	<li class="nav-item active">
+                    	<a class="nav-link" href="https://www.linkedin.com/in/eduardolongencorr%C3%AAa/">Linkedin</a>
+                  	</li>
+                </ul>
+
+				<button type="button" class="btn btn-secondary" data-bs-container="body" 
+					data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
+					Login
+				</button>
+                
+            </div>
+        </nav>
+    </header>
+
+	<main>
+
+        <div class="about">
+			<div class="about-inner">
+				<h1 class="post-title">Demystifying the Rails Routes</h1>
+			</div>
+		</div>
+
+        <div class="post-image">
+            <img class="post-image" src="rails_routing.jpeg" alt="Ruby on Rails">
+        </div>
+
+        <div class="post-content">
+            <div class="row">
+                <div class="col-md-3">
+                    <!-- Left column content -->
+                </div>
+                <div class="col-md-6">
+                    <!-- Middle column content -->
+                    <p class="post-subtitle">Demystifying the Rails Routes: Your Guide to Web Traffic Navigation</p> <br>
+                    <p class="post-text"> 
+                        Welcome, fellow Ruby on Rails adventurers! Today, we embark on a quest to conquer the mysterious realm of routing. Fear not, for this guide will be your trusty compass, helping you navigate the intricate paths of web traffic within your Rails application. <br><br>
+
+                        Imagine a bustling city where incoming requests are like eager travelers seeking specific destinations. The router acts as the city's transportation system, directing each request to the appropriate controller and action, ensuring everyone reaches their desired landmark. <br><br>
+
+                        Before diving into the code, let's familiarize ourselves with some key terms:
+                    </p>
+
+                    <p class="post-text">
+                        <kbd>Route:</kbd> A pathway that maps an incoming request (URL, HTTP verb) to a specific controller action.
+                        <br>
+                        <kbd>Controller:</kbd> Receives requests, processes data, and interacts with the model and view layers.
+                        <br>
+                        <kbd>Action:</kbd> A method within a controller responsible for handling a specific task (e.g., displaying a list of articles, editing a user profile).
+                        <br>
+                        <kbd>Parameters:</kbd> Pieces of information extracted from the request (e.g., article ID, user name) and passed to the controller action.
+                    </p> <br><br>
+                        
+                    <p class="post-subtitle">Charting the Paths</p> <br>
+                        
+                    <p class="post-text">
+                        <kbd>Resourceful Routing:</kbd> This powerful approach allows you to declare all common routes for a controller with a single line of code. Imagine saying, "Take me to all the articles, the one with ID 5, and let me create a new one!" Resourceful routing handles it all!
+                        <br>
+                    </p>
+                    <p class="post-text">
+                        <kbd>Manual Routing:</kbd> For finer control, you can craft individual routes using the match method. Think of it as giving the driver precise directions: "Turn left at the bookstore, then two blocks straight before stopping at the bakery."
+                    </p> <br><br>
+
+                    <p class="post-subtitle">Decoding the Map</p> <br>
+
+                    <p class="post-text">
+                        The <code class="code-back">config/routes.rb</code> file is your routing bible. Here, you configure your routes using a special syntax, specifying the path, HTTP verb, and destination controller/action. Think of it as writing street signs and directions for every possible destination in your city.
+                    </p> <br><br>
+                    
+                    <p class="post-subtitle">Exploring the Routes</p> <br>
+
+                    <p class="post-text">
+                        <code>get "/articles" => "articles#index"</code>: This route directs all GET requests to the <code class="code-back">/articles</code> path to the index action of the <code class="code-back">ArticlesController</code>. It's like saying, "Show me all the articles when someone reaches the /articles page."
+                    </p> <br>
+
+                    <p class="post-text">
+                        <code>post "/articles/:id/comments" => "comments#create"</code>: This route handles POST requests to create comments on an article. The <code>:id</code> placeholder captures the article's ID from the URL and passes it to the <code>create</code> action. Imagine a sign saying, "Create comments for article #5 here!"
+                    </p> <br><br>
+                        
+                    <p class="post-subtitle">Generating paths</p> <br>
+                        
+                    <p class="post-text">
+                        Once you've defined your routes, Rails provides handy helpers to generate URLs dynamically. This lets you keep your code clean and avoids hardcoding them directly. Think of it as having a city map that tells you exactly where to find each destination based on its name.
+                    </p> <br>
+
+                    <ol class="post-text">
+                        <li><b>Using Named Routes</b><br>
+                                When defining routes, you can assign them names for convenient generation later:
+                            <br>
+                            <code>get "/articles/:id", to: "articles#show", as: "article"</code>
+                            <br><br>
+                            Now, in your views or controllers, use the article_path helper to create the URL:
+                            <br>
+                            <code><%= link_to "View Article", article_path(@article) %></code>
+                            <br><br>
+                            This generates <code class="code-back">/articles/123</code> if <code class="code-back">@article.id</code> is 123. It's like having a personal GPS that knows the names of all the landmarks and can provide directions on demand.
+                        </li>
+
+                        <br>
+                        <li><b>Using URL Helpers</b><br>
+                            Pass parameters to URL helpers to create dynamic URLs:
+                            <br><br>
+                            <kbd>root_path:</kbd> Generates the root URL (e.g., <code>/</code>).
+                            <br>
+                            <kbd>articles_path:</kbd> Generates the index path for articles (e.g., <code class="code-back">/articles</code>).
+                            <br>
+                            <kbd>new_article_path:</kbd> Generates the new article path (e.g., <code class="code-back">/articles/new</code>).
+                            <br>
+                            <kbd>edit_article_path(article):</kbd> Generates the edit path for a specific article.
+                        </li>
+
+                        <br>
+                        <li><b>Dynamically Generating Paths with Parameters</b><br>
+                                Rails provides built-in helpers for common routes:
+                            <br><br>
+                            <code><%= link_to "Edit", edit_article_path(@article) %></code>>
+                            <br><br>
+                            This generates <code class="code-back">/articles/123/edit</code> for the article with ID 123. Think of it as having a map that automatically updates with the correct path based on the destination you choose.
+                        </li>
+
+                        <br>
+                        <li><b>Generating Paths in Controllers</b><br>
+                            Use <code>url_for</code> within controllers to generate paths:
+                            <br><br>
+                            <code>redirect_to article_url(@article)</code>>
+                            <br><br>
+                            This redirects to the article's show page. It's like having a traffic controller that can redirect vehicles to different routes based on current conditions.
+                        </li>
+                    </ol> <br><br>
+
+                    <p class="post-subtitle">Beyond the Basics</p> <br>
+                        
+                    <ol class="post-text">
+                        <li><b>Nested Resources</b><br>
+                            Imagine a blog where articles have comments. You can create nested routes to reflect this relationship:
+                            <br><br>
+                            
+                            <div class="code-container">
+                                <code class="code-2">resources </code> <code class="code-3">:articles </code> <code class="code-4">do</code><br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<code class="code-2">resources </code> <code class="code-3">:comments</code><br>
+                                <code class="code-4">end</code>
+                            </div>
+
+                            <br>
+                            This generates routes like <code class="code-back">/articles/:article_id/comments</code> for managing comments within the context of specific articles. It's like having a bus route that takes you to a particular neighborhood and then connects you to specific streets within that area.
+                            <br><br>
+                        </li>
+
+                        <li><b>Constraints</b><br>
+                            Constraints allow you to restrict routes based on certain conditions. For example, to ensure only logged-in users can access a profile page:
+                            <br><br>
+                            
+                            <div class="code-container">
+                                <code class="code-2">get</code> <code class="code-5">"/profile"</code> <code class="code-2">=></code> <code class="code-5">"users#show"</code><code class="code-2">,</code> <code class="code-3">constraints:</code> <code class="code-2">{</code> <code class="code-3">id:</code> <code class="code-2">/[</code><code class="code-3">0-9</code><code class="code-2">]+/}</code>
+                            </div>
+
+                            <br>
+                            This limits the <code class="code-back">id</code> in the URL to numerical values, preventing invalid routes. Think of it as setting up roadblocks to ensure only authorized vehicles can enter certain areas.
+                            <br><br>
+                        </li>
+
+                        <li><b>Custom Paths</b><br>
+                            For complete control over URL structure, you can define custom paths using the <code class="code-back">path</code> option:
+                            <br><br>
+                            
+                            <div class="code-container">
+                                <code class="code-2">get</code> <code class="code-5">"/profile"</code> <code class="code-2">=></code> <code class="code-5">"users#show"</code><code class="code-2">,</code> <code class="code-3">constraints:</code> <code class="code-2">{</code> <code class="code-3">id:</code> <code class="code-2">/[</code><code class="code-3">0-9</code><code class="code-2">]+/}</code>
+                            </div>
+
+                            <br>
+                            This creates a custom route for the <code class="code-back">about-us</code> page, accessible using the helper <code class="code-back">about_path</code>. It's like adding a special scenic route to your city's transportation network.
+                            <br><br>
+                        </li>
+
+                        <li><b>Scoping</b><br>
+                            Scope routes to specific namespaces or modules for organization and avoid conflicts:
+                            <br><br>
+                            
+                            <div class="code-container">
+                                <code class="code-2">scope </code> <code class="code-3">module: </code> <code class="code-3">'admin' </code> <code class="code-4">do</code><br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<code class="code-2">resources </code> <code class="code-3">:articles</code><br>
+                                <code class="code-4">end</code>
+                            </div>
+
+                            <br>
+                            This creates routes like <code class="code-back">/admin/articles</code> for administrative tasks. It's like having separate transportation systems for different parts of the city, each with its own set of routes and rules.
+                            <br><br>
+                        </li>
+
+                    </ol>
+                        
+                    <p class="post-subtitle">Remember</p> <br>
+                        
+                    <p class="post-text">
+                        Routing is the foundation of your application's interaction with the world. By understanding its principles and wielding its tools effectively, you'll guide your users to their desired destinations seamlessly, making your Rails app a true masterpiece of navigation.
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <!-- Right column content -->
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+	<footer>
+		<div class="footer-container">
+		</div>
+		<div class="footer-text-container">
+			<p>Eduardo Longen Corrêa © 2024</p>
+			<a class="footer-text-container" href="https://icons8.com/icon/2oqQYJZ9YJ5e/arrow">Icons by Icons8</a>
+		</div>
+	</footer>
+    
+</body>

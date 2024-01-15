@@ -2,8 +2,13 @@
     --main-background-color: #fbfbfb;
     --main-text-color: #121619;
     --main-text-color-2: #2e2e2e;
+    --light-gray: #f1f1f1;
     --blue-color: #1b8af7;
     --white-color: #fafbfc;
+    --gray-code: #c4c7c5;
+    --orange-code: #fa903e;
+    --purple-code: #c589f8;
+    --green-code: #80c995;
 }
 
 * {
@@ -285,7 +290,6 @@ main {
     display: flex;
     flex-direction: row; /* This will arrange the items in a row */
     align-items: start; /* This will align the items to the start of the container */
-
 }
 
 .post-text-2 {
@@ -309,6 +313,98 @@ main {
     color: var(--blue-color);
     text-decoration: none;
     text-decoration: underline;
+}
+
+.img-source {
+    font-family: 'Manrope', sans-serif;
+    font-size: .8rem;
+    font-weight: 200;
+    color: var(--main-text-color-2);
+    text-decoration: none;
+    margin: 0rem;
+    text-align: right;
+}
+
+kbd {
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.code-container {
+    background-color: #1b1b1b;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+code {
+    line-height: 1.5;
+}
+
+.code-back {
+    background-color: var(--light-gray);
+    color: var(--main-text-color-2);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    padding: 0.3rem;
+    margin: 0rem;
+    border-radius: 5px;
+}
+
+.code-2 {
+    color: var(--gray-code);
+}
+
+.code-3 {
+    color: var(--orange-code);
+}
+
+.code-4 {
+    color: var(--purple-code);
+}
+
+.code-5 {
+    color: var(--green-code);
+}
+
+.footer-container div {
+    box-sizing: border-box;
+    position: relative;
+    height: 20px;
+    background-color: var(--main-background-color);
+}
+
+.footer-container div::before {
+    content: "";
+    position: absolute;
+    top: -1px; 
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: var(--main-text-color);
+}
+footer {
+    background-color: var(--main-background-color);
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-text-container {
+    height: 10rem;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: bottom;
+    background-color: var(--main-text-color);
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    font-family: 'Manrope', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 100;
+    color: var(--main-background-color);
+    padding-top: 1rem;
 }
 
 .div1 { grid-area: 1 / 1 / 2 / 2; }
