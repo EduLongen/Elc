@@ -12,7 +12,6 @@
 }
 
 * {
-
     font-family: 'Manrope', sans-serif;
 }
 
@@ -413,3 +412,257 @@ footer {
 .div4 { grid-area: 2 / 2 / 3 / 3; }
 .div5 { grid-area: 3 / 1 / 4 / 2; }
 .div6 { grid-area: 3 / 2 / 4 / 3; }
+
+/* CSS for screens smaller than 1440px */
+@media only screen and (max-width: 1440px) {
+    
+    .welcome-tittle , .blog-card-title {
+        font-size: 3rem;
+    }
+
+    .container {
+        width: 100%;
+    }
+}
+
+/* CSS for screens smaller than 1024px */
+@media only screen and (max-width: 1024px) {
+
+    header {
+        background-color: transparent;
+        padding-top: 1.3rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        top: 0; 
+        z-index: 100; 
+    }
+
+    main {
+        margin-top: 4rem;
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    
+    header .navbar-nav .nav-item.active .nav-link {
+        margin-left: 1rem;
+    }
+
+    .welcome-tittle {
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+    .welcome {
+        font-size: 1.2rem;
+    }
+
+    .space-line {
+        height: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .blog-card-title {
+        font-size: 2rem;
+    }
+
+    .blog-card-text {
+        font-size: 1.1rem;
+    }
+
+    .blog-card-date {
+        font-size: 0.8rem;
+    }
+
+    .img-source {
+        font-size: .7rem;
+    }
+
+    .card-text {
+        font-size: .9rem;
+    }
+
+    .container {
+        width: 100%;
+    }
+}
+
+/* CSS for screens smaller than 768px */
+@media only screen and (max-width: 768px) {
+
+    header {
+        background-color: transparent;
+        padding-top: 1.2rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        top: 0; 
+        z-index: 100; 
+    }
+
+    header .navbar .navbar-expand-lg {
+        font-family: 'Manrope', sans-serif;
+        background-color: transparent;
+        font-weight: bold;
+        color: var(--main-text-color);
+    }
+    
+    header .navbar-brand {
+        font-family: 'Manrope', sans-serif;
+        font-size: 1.7rem;
+        font-weight: bold;
+        color: var(--main-text-color);
+        background-color: transparent;
+        margin-left: 0rem;
+        margin-right: 1rem;
+    }
+
+    main {
+        margin-top: 2rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    
+    header .navbar-nav .nav-item.active .nav-link {
+        margin-left: 1rem;
+    }
+
+    .welcome-tittle {
+        font-size: 2.7rem;
+        margin-bottom: 10px;
+    }
+
+    .welcome {
+        font-size: 1.1rem;
+    }
+
+    .space-line {
+        height: 0.5rem;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+
+    .blog-card-title {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .blog-card-text {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .blog-card-date {
+        font-size: 0.5rem;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
+
+    .img-source {
+        font-size: .4rem;
+    }
+
+    .parent {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .parent > div {
+        flex: 1 0 0;
+    }
+
+    .container {
+        width: 100%;
+    }
+}
+
+/* CSS for screens smaller than 430px */
+@media only screen and (max-width: 430px) {
+
+    header {
+        background-color: transparent;
+        padding-top: 1.1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        top: 0; 
+        z-index: 100; 
+    }
+
+    header .navbar .navbar-expand-lg {
+        font-family: 'Manrope', sans-serif;
+        background-color: transparent;
+        font-weight: bold;
+        color: var(--main-text-color);
+    }
+    
+    header .navbar-brand {
+        font-family: 'Manrope', sans-serif;
+        font-size: 1.4rem;
+        font-weight: bold;
+        color: var(--main-text-color);
+        background-color: transparent;
+        margin-left: 0rem;
+        margin-right: 1rem;
+    }
+
+    main {
+        margin-top: 2rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    header .navbar-nav .nav-item.active .nav-link {
+        margin-left: 1rem;
+    }
+
+    .welcome-tittle {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+
+    .welcome {
+        font-size: 1rem;
+    }
+
+    .space-line {
+        height: 0rem;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+
+    .blog-card-title {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .blog-card-text {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .blog-card-date {
+        font-size: 0.5rem;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
+
+    .img-source {
+        font-size: .4rem;
+    }
+
+    .parent {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .parent > div {
+        flex: 1 0 0;
+    }
+
+    .container {
+        width: 100%;
+    }
+}
