@@ -184,6 +184,8 @@ main {
 
 .symbol {
     margin-right: 1rem;
+    width: 35px;
+    height: 35px;
 }
 
 .col-md-6 {
@@ -482,6 +484,12 @@ footer {
         font-size: .9rem;
     }
 
+    .symbol {
+        margin-right: 0.5rem;
+        width: 25px;
+        height: 25px;
+    }
+
     .container {
         width: 100%;
     }
@@ -563,13 +571,15 @@ footer {
         font-size: .4rem;
     }
 
+    .symbol {
+        margin-right: 0.5rem;
+        width: 25px;
+        height: 25px;
+    }
+
     .parent {
         display: flex;
         flex-wrap: wrap;
-    }
-    
-    .parent > div {
-        flex: 1 0 0;
     }
 
     .container {
@@ -617,7 +627,7 @@ footer {
     }
 
     .welcome-tittle {
-        font-size: 2rem;
+        font-size: 1.6rem;
         margin-bottom: 10px;
     }
 
@@ -656,10 +666,6 @@ footer {
     .parent {
         display: flex;
         flex-wrap: wrap;
-    }
-    
-    .parent > div {
-        flex: 1 0 0;
     }
 
     .container {
