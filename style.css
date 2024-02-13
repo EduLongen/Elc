@@ -9,6 +9,8 @@
     --orange-code: #fa903e;
     --purple-code: #c589f8;
     --green-code: #80c995;
+    --red-code: #d84249;
+    --yellow-code: #f7c95c;
 }
 
 * {
@@ -90,13 +92,29 @@ header .navbar-nav .nav-item .nav-link:hover {
     transform: scale(1.2);
 }
 
+ul {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--main-text-color-2);
+    line-height: 1.6;
+}
+
+li {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: var(--main-text-color-2);
+    line-height: 1.6;
+}
+
 .nav-item-1 {
     font-size: 1.6rem;
 }
 
 .btn-secondary, .btn-secondary:hover, .btn-secondary:active, .btn-secondary:visited {
-    background-color: #505050 !important;
-    border-color: #505050 !important;
+    background-color: #696969 !important;
+    border-color: #696969 !important;
     color: var(--white-color) !important;
     font-family: 'Manrope', sans-serif !important;
     font-size: 1rem !important;
@@ -228,7 +246,7 @@ main {
     font-family: 'Manrope', sans-serif;
     font-size: 0.9rem;
     font-weight: 400;
-    color: #3d3d3d;
+    color: #696969;
     text-align: justify;
 }
 
@@ -260,6 +278,8 @@ main {
     margin-top: 8rem;
     margin-bottom: 5rem;
     text-align: justify;
+    margin-left: 23rem;
+    margin-right: 23rem;
 }
 
 .post-subtitle {
@@ -269,6 +289,7 @@ main {
     color: var(--main-text-color-2);
     text-decoration: none;
     margin-bottom: 0.5rem;
+    margin-top: 3rem;
 }
 
 .post-text {
@@ -279,6 +300,7 @@ main {
     text-decoration: none;
     line-height: 1.6;
     display: inline-block;
+    margin-bottom: 0.5rem;
 }
 
 .text-container {
@@ -332,9 +354,10 @@ kbd {
 }
 
 .code-container {
-    background-color: #1b1b1b;
+    background-color: #2d2d30;
     padding: 1rem;
     border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 code {
@@ -366,6 +389,14 @@ code {
 
 .code-5 {
     color: var(--green-code);
+}
+
+.code-6 {
+    color: var(--red-code);
+}
+
+.code-7 {
+    color: var(--yellow-code);
 }
 
 .footer-container div {
@@ -420,6 +451,14 @@ footer {
     
     .welcome-tittle , .blog-card-title {
         font-size: 3rem;
+    }
+
+    .post-content {
+        margin-top: 8rem;
+        margin-bottom: 5rem;
+        text-align: justify;
+        margin-left: 15rem;
+        margin-right: 15rem;
     }
 
     .container {
@@ -488,6 +527,14 @@ footer {
         margin-right: 0.5rem;
         width: 25px;
         height: 25px;
+    }
+
+    .post-content {
+        margin-top: 8rem;
+        margin-bottom: 5rem;
+        text-align: justify;
+        margin-left: 9rem;
+        margin-right: 9rem;
     }
 
     .container {
@@ -582,6 +629,14 @@ footer {
         flex-wrap: wrap;
     }
 
+    .post-content {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        text-align: justify;
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
     .container {
         width: 100%;
     }
@@ -666,6 +721,45 @@ footer {
     .parent {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .post-content {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        text-align: justify;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .post-title {
+        font-family: 'Manrope', sans-serif;
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: var(--main-text-color);
+        margin-bottom: 1rem;
+        text-decoration: none;
+        line-height: 1.2;
+    }
+
+    .post-subtitle {
+        font-family: 'Manrope', sans-serif;
+        font-size:1.6rem;
+        font-weight: 500;
+        color: var(--main-text-color-2);
+        text-decoration: none;
+        margin-bottom: 0.5rem;
+        margin-top: 3rem;
+    }
+    
+    .post-text {
+        font-family: 'Manrope', sans-serif;
+        font-size: 1.1rem;
+        font-weight: 400;
+        color: var(--main-text-color-2);
+        text-decoration: none;
+        line-height: 1.6;
+        display: inline-block;
+        margin-bottom: 0.5rem;
     }
 
     .container {
